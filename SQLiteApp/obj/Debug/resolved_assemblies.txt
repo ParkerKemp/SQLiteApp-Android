@@ -1,0 +1,2 @@
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\bin\Debug\SQLiteApp.dll
+C:\Users\parker.kemp\Desktop\json.net-4.5.11\lib\android\Newtonsoft.Json.dll
