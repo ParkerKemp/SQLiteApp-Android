@@ -48,6 +48,7 @@ namespace SQLiteApp
 		{
 			Intent ordersIntent = new Intent(this, typeof(AllOrdersActivity));
 			ordersIntent.PutExtra("StoreID", _store.StoreID);
+			ordersIntent.PutExtra("StoreName", _store.StoreName);
 			StartActivity(ordersIntent);
 		}
 
@@ -55,6 +56,7 @@ namespace SQLiteApp
 		{
 			FindViewById<TextView>(Resource.Id.storeName).Text = _store.StoreName;
 
+			FindViewById<TextView>(Resource.Id.storeID).Text = _store.StoreID;
 			FindViewById<TextView>(Resource.Id.territoryNum).Text = _store.TerritoryNum.ToString();
 			FindViewById<TextView>(Resource.Id.sequenceNum).Text = _store.SequenceNum;
 			FindViewById<TextView>(Resource.Id.address).Text = _store.Address1 + "\n" + _store.Address2

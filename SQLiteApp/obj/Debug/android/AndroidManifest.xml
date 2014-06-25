@@ -9,7 +9,6 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:configChanges="orientation|screenSize" android:theme="@android:style/Theme.NoTitleBar" android:name="sqliteapp.OrderActivity" />
     <activity android:configChanges="orientation|screenSize" android:theme="@android:style/Theme.NoTitleBar" android:name="sqliteapp.OrderDetailActivity" />
     <activity android:configChanges="orientation|screenSize" android:theme="@android:style/Theme.NoTitleBar" android:name="sqliteapp.StoreDetailActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="SQLiteApp.SQLiteApp.mono.MonoRuntimeProvider.__mono_init__" />

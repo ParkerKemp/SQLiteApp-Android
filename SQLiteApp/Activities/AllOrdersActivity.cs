@@ -13,6 +13,7 @@ namespace SQLiteApp
 	{
 		Database _database;
 		ListView _orderList;
+		string _storeName;
 		string _storeID;
 
 		protected override void OnCreate(Bundle savedInstanceState)
@@ -38,6 +39,7 @@ namespace SQLiteApp
 		private void GetExtras()
 		{
 			_storeID = Intent.GetStringExtra("StoreID");
+			_storeName = Intent.GetStringExtra("StoreName");
 		}
 
 		private void GetUIComponents()
@@ -65,6 +67,7 @@ namespace SQLiteApp
 		{
 			Intent orderIntent = new Intent(this, typeof(OrderDetailActivity));
 			orderIntent.PutExtra("Order", JsonConvert.SerializeObject(order));
+			orderIntent.PutExtra("StoreName", _storeName);
 			StartActivity(orderIntent);
 		}
 
@@ -74,6 +77,7 @@ namespace SQLiteApp
 
 			OrderSummaryAdapter adapter = new OrderSummaryAdapter(this, orders);
 			_orderList.Adapter = adapter;
+			FindViewById<TextView>(Resource.Id.storeName).Text = "Orders from " + _storeName;
 		}
 	}
 }

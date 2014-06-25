@@ -18,6 +18,7 @@ namespace SQLiteApp
 	class OrderDetailActivity : Activity
 	{
 		Order _order;
+		string _storeName;
 
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
@@ -26,6 +27,7 @@ namespace SQLiteApp
 			SetContentView(Resource.Layout.OrderDetails);
 
 			_order = JsonConvert.DeserializeObject<Order>(Intent.GetStringExtra("Order"));
+			_storeName = Intent.GetStringExtra("StoreName");
 
 			PopulateView();
 		}
@@ -37,7 +39,7 @@ namespace SQLiteApp
 
 		private void PopulateView()
 		{
-			FindViewById<TextView>(Resource.Id.storeName).Text = "Order at " + _order.StoreName;
+			FindViewById<TextView>(Resource.Id.storeName).Text = "Order froms " + _storeName;
 
 			FindViewById<TextView>(Resource.Id.orderID).Text = _order.OrderID;
 			FindViewById<TextView>(Resource.Id.date).Text = _order.Date;

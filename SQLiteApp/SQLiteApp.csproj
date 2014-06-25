@@ -63,16 +63,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Desktop\SQLiteApp Backend\Database.cs">
+      <Link>Backend code\Database.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Desktop\SQLiteApp Backend\Order.cs">
+      <Link>Backend code\Order.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Desktop\SQLiteApp Backend\Store.cs">
+      <Link>Backend code\Store.cs</Link>
+    </Compile>
     <Compile Include="AllOrdersActivity.cs" />
-    <Compile Include="Database.cs" />
     <Compile Include="AllStoresActivity.cs" />
-    <Compile Include="Order.cs" />
-    <Compile Include="OrderActivity.cs" />
     <Compile Include="OrderDetailActivity.cs" />
     <Compile Include="OrderSummaryAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
-    <Compile Include="Store.cs" />
     <Compile Include="StoreAdapter.cs" />
     <Compile Include="StoreDetailActivity.cs" />
   </ItemGroup>
