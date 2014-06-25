@@ -1,8 +1,8 @@
-package sqliteapp;
+package sqliteapp.activities;
 
 
-public class AllOrdersActivity
-	extends android.app.Activity
+public class SearchStoresActivity
+	extends sqliteapp.StoresActivity
 	implements
 		mono.android.IGCUserPeer
 {
@@ -11,17 +11,16 @@ public class AllOrdersActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onOptionsItemSelected:(Landroid/view/MenuItem;)Z:GetOnOptionsItemSelected_Landroid_view_MenuItem_Handler\n" +
-			"n_onConfigurationChanged:(Landroid/content/res/Configuration;)V:GetOnConfigurationChanged_Landroid_content_res_Configuration_Handler\n" +
 			"";
-		mono.android.Runtime.register ("SQLiteApp.AllOrdersActivity, SQLiteApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", AllOrdersActivity.class, __md_methods);
+		mono.android.Runtime.register ("SQLiteApp.Activities.SearchStoresActivity, SQLiteApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", SearchStoresActivity.class, __md_methods);
 	}
 
 
-	public AllOrdersActivity () throws java.lang.Throwable
+	public SearchStoresActivity () throws java.lang.Throwable
 	{
 		super ();
-		if (getClass () == AllOrdersActivity.class)
-			mono.android.TypeManager.Activate ("SQLiteApp.AllOrdersActivity, SQLiteApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+		if (getClass () == SearchStoresActivity.class)
+			mono.android.TypeManager.Activate ("SQLiteApp.Activities.SearchStoresActivity, SQLiteApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 
@@ -39,14 +38,6 @@ public class AllOrdersActivity
 	}
 
 	private native boolean n_onOptionsItemSelected (android.view.MenuItem p0);
-
-
-	public void onConfigurationChanged (android.content.res.Configuration p0)
-	{
-		n_onConfigurationChanged (p0);
-	}
-
-	private native void n_onConfigurationChanged (android.content.res.Configuration p0);
 
 	java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

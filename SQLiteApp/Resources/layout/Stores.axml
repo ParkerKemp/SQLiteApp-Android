@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout"
-        android:layout_marginTop="10dip"
+        android:layout_marginTop="30dip"
         android:layout_marginLeft="10dip">
         <TextView
             android:text="Filter by store name:"
@@ -34,7 +34,6 @@
             android:layout_marginLeft="2dip"
             android:layout_marginRight="2dip"
             android:layout_marginTop="2dip"
-            android:layout_marginBottom="5dip"
             android:imeOptions="actionSearch|flagNoExtractUi"
             android:textColor="#003300" />
     </LinearLayout>
@@ -45,17 +44,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout1"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="5dp">
-        <TextView
-            android:text="Stores"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView1"
-            android:textColor="#FF6600"
-            android:textSize="40sp" />
         <ListView
             android:minWidth="25px"
             android:minHeight="25px"

@@ -4,14 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DDDDDD">
-    <TextView
-        android:text="Orders at (Store Name)"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/storeName"
-        android:textColor="#FF6600"
-        android:textSize="24sp"
-        android:layout_margin="5dp" />
     <LinearLayout
         android:orientation="vertical"
         android:minWidth="25px"
@@ -19,8 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout1"
-        android:layout_below="@id/storeName"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp">
         <LinearLayout

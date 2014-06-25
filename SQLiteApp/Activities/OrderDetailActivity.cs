@@ -14,7 +14,7 @@ using Newtonsoft.Json;
 
 namespace SQLiteApp
 {
-	[Activity(ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize, Theme = "@android:style/Theme.NoTitleBar")]
+	[Activity(ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
 	class OrderDetailActivity : Activity
 	{
 		Order _order;
@@ -30,6 +30,22 @@ namespace SQLiteApp
 			_storeName = Intent.GetStringExtra("StoreName");
 
 			PopulateView();
+
+			ActionBar.Title = "Order from " + _storeName;
+			ActionBar.SetHomeButtonEnabled(true);
+			ActionBar.SetDisplayHomeAsUpEnabled(true);
+			ActionBar.SetDisplayShowHomeEnabled(false);
+		}
+
+		public override bool OnOptionsItemSelected(Android.Views.IMenuItem item)
+		{
+			switch (item.ItemId)
+			{
+				case Android.Resource.Id.Home:
+					OnBackPressed();
+					break;
+			}
+			return base.OnOptionsItemSelected(item);
 		}
 
 		public override void OnConfigurationChanged(Android.Content.Res.Configuration newConfig)
@@ -39,8 +55,6 @@ namespace SQLiteApp
 
 		private void PopulateView()
 		{
-			FindViewById<TextView>(Resource.Id.storeName).Text = "Order froms " + _storeName;
-
 			FindViewById<TextView>(Resource.Id.orderID).Text = _order.OrderID;
 			FindViewById<TextView>(Resource.Id.date).Text = _order.Date;
 			FindViewById<TextView>(Resource.Id.totalItems).Text = _order.TotalItems.ToString();

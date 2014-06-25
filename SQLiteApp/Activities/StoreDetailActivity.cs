@@ -5,7 +5,7 @@ using Android.Widget;
 using Newtonsoft.Json;
 namespace SQLiteApp
 {
-	[Activity(ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize, Theme = "@android:style/Theme.NoTitleBar")]
+	[Activity(ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
 	class StoreDetailActivity : Activity
 	{
 		Store _store;
@@ -22,6 +22,22 @@ namespace SQLiteApp
 			GetUIComponents();
 			
 			PopulateData();
+
+			ActionBar.Title = _store.StoreName;
+			ActionBar.SetHomeButtonEnabled(true);
+			ActionBar.SetDisplayHomeAsUpEnabled(true);
+			ActionBar.SetDisplayShowHomeEnabled(false);
+		}
+
+		public override bool OnOptionsItemSelected(Android.Views.IMenuItem item)
+		{
+			switch (item.ItemId)
+			{
+				case Android.Resource.Id.Home:
+					OnBackPressed();
+					break;
+			}
+			return base.OnOptionsItemSelected(item);
 		}
 
 		public override void OnConfigurationChanged(Android.Content.Res.Configuration newConfig)
@@ -54,8 +70,6 @@ namespace SQLiteApp
 
 		private void PopulateData()
 		{
-			FindViewById<TextView>(Resource.Id.storeName).Text = _store.StoreName;
-
 			FindViewById<TextView>(Resource.Id.storeID).Text = _store.StoreID;
 			FindViewById<TextView>(Resource.Id.territoryNum).Text = _store.TerritoryNum.ToString();
 			FindViewById<TextView>(Resource.Id.sequenceNum).Text = _store.SequenceNum;

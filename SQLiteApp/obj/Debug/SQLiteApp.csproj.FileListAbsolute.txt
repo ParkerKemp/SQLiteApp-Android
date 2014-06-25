@@ -13,7 +13,7 @@ C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\o
 C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\layout\allorders.xml
 C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\layout\storedetails.xml
 C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\layout\orderdetails.xml
-C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\layout\allstores.xml
 C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\layout\storelistitem.xml
 C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\layout\ordersummaryitem.xml
 C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\layout\stores.xml

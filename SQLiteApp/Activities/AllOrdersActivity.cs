@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace SQLiteApp
 {
-	[Activity(ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize, Theme = "@android:style/Theme.NoTitleBar")]
+	[Activity(ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
 	class AllOrdersActivity : Activity
 	{
 		Database _database;
@@ -29,6 +29,22 @@ namespace SQLiteApp
 			GetDatabase();
 
 			PopulateView();
+
+			ActionBar.Title = "Orders from " + _storeName;
+			ActionBar.SetHomeButtonEnabled(true);
+			ActionBar.SetDisplayHomeAsUpEnabled(true);
+			ActionBar.SetDisplayShowHomeEnabled(false);
+		}
+
+		public override bool OnOptionsItemSelected(Android.Views.IMenuItem item)
+		{
+			switch (item.ItemId)
+			{
+				case Android.Resource.Id.Home:
+					OnBackPressed();
+					break;
+			}
+			return base.OnOptionsItemSelected(item);
 		}
 
 		public override void OnConfigurationChanged(Android.Content.Res.Configuration newConfig)
@@ -77,7 +93,6 @@ namespace SQLiteApp
 
 			OrderSummaryAdapter adapter = new OrderSummaryAdapter(this, orders);
 			_orderList.Adapter = adapter;
-			FindViewById<TextView>(Resource.Id.storeName).Text = "Orders from " + _storeName;
 		}
 	}
 }
