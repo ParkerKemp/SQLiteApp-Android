@@ -13,14 +13,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout"
         android:layout_marginTop="30dip"
-        android:layout_marginLeft="10dip">
-        <TextView
-            android:text="Filter by store name:"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/searchPrompt"
-            android:textColor="#FF6600" />
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,7 +29,8 @@
             android:layout_marginRight="2dip"
             android:layout_marginTop="2dip"
             android:imeOptions="actionSearch|flagNoExtractUi"
-            android:textColor="#003300" />
+            android:textColor="#003300"
+            android:hint="Search for stores" />
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"

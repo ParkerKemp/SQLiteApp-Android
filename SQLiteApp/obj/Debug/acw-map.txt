@@ -1,6 +1,7 @@
 SQLiteApp.AllOrdersActivity;sqliteapp.AllOrdersActivity
 SQLiteApp.StoresActivity;sqliteapp.StoresActivity
 SQLiteApp.Activities.AllStoresActivity;sqliteapp.activities.AllStoresActivity
+SQLiteApp.Activities.NewStoreActivity;sqliteapp.activities.NewStoreActivity
 SQLiteApp.OrderDetailActivity;sqliteapp.OrderDetailActivity
 SQLiteApp.Activities.SearchStoresActivity;sqliteapp.activities.SearchStoresActivity
 SQLiteApp.OrderSummaryAdapter;sqliteapp.OrderSummaryAdapter

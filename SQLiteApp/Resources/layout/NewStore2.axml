@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:text="Store:"
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF6600"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/storeName"
+                android:background="#ffffff"
+                android:hint="Store Name"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="20dp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                android:id="@+id/storeID"
+                android:background="#ffffff"
+                android:hint="Store ID"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="20dp"
+                android:id="@+id/storeNum"
+                android:background="#ffffff"
+                android:hint="Store #"
+                android:textSize="16sp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="20dp"
+                android:id="@+id/territoryNum"
+                android:layout_marginLeft="5dp"
+                android:background="#ffffff"
+                android:hint="Territory #"
+                android:textSize="16sp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="20dp"
+                android:id="@+id/sequenceNum"
+                android:background="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:textSize="14sp"
+                android:hint="Sequence #" />
+        </LinearLayout>
+        <TextView
+            android:text="Contact:"
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF6600"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/managerName"
+            android:background="#ffffff"
+            android:hint="Manager Full Name"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/address1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:hint="Address (line 1)"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/address2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#ffffff"
+            android:layout_marginTop="5dp"
+            android:hint="Address (line 2)"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="20dp"
+                android:id="@+id/city"
+                android:background="#ffffff"
+                android:hint="City"
+                android:textSize="16sp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="20dp"
+                android:id="@+id/state"
+                android:background="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:hint="St"
+                android:textSize="16sp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="20dp"
+                android:id="@+id/zip"
+                android:background="#ffffff"
+                android:hint="Zip"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

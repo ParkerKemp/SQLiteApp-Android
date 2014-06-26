@@ -29,6 +29,12 @@ namespace SQLiteApp.Activities
 			PopulateView();
 		}
 
+		public override bool OnCreateOptionsMenu(IMenu menu)
+		{
+			MenuInflater.Inflate(Resource.Menu.PlusMenu, menu);
+			return base.OnCreateOptionsMenu(menu);
+		}
+
 		protected override void GetUIComponents()
 		{
 			base.GetUIComponents();

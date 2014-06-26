@@ -36,7 +36,7 @@ namespace SQLiteApp
 			ActionBar.SetDisplayHomeAsUpEnabled(true);
 			ActionBar.SetDisplayShowHomeEnabled(false);
 		}
-
+		
 		public override bool OnOptionsItemSelected(Android.Views.IMenuItem item)
 		{
 			switch (item.ItemId)

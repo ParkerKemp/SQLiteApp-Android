@@ -9,6 +9,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:configChanges="orientation|screenSize" android:name="sqliteapp.activities.NewStoreActivity" />
     <activity android:configChanges="orientation|screenSize" android:name="sqliteapp.OrderDetailActivity" />
     <activity android:configChanges="orientation|screenSize" android:name="sqliteapp.activities.SearchStoresActivity" />
     <activity android:configChanges="orientation|screenSize" android:name="sqliteapp.StoreDetailActivity" />

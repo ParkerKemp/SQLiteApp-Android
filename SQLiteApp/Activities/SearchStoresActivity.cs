@@ -28,8 +28,7 @@ namespace SQLiteApp.Activities
 			GetUIComponents();
 
 			FindViewById<EditText>(Resource.Id.storeIdEditText).Visibility = ViewStates.Invisible;
-			FindViewById<TextView>(Resource.Id.searchPrompt).Visibility = ViewStates.Invisible;
-
+			
 			_database = new Database(DatabaseName());
 
 			PopulateView();

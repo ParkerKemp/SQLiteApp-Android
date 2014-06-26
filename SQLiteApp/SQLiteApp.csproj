@@ -74,6 +74,7 @@
     </Compile>
     <Compile Include="Activities\AllOrdersActivity.cs" />
     <Compile Include="Activities\AllStoresActivity.cs" />
+    <Compile Include="Activities\NewStoreActivity.cs" />
     <Compile Include="Activities\StoresActivity.cs" />
     <Compile Include="Activities\OrderDetailActivity.cs" />
     <Compile Include="Activities\SearchStoresActivity.cs" />
@@ -102,6 +103,15 @@
     <AndroidResource Include="Resources\layout\OrderSummaryItem.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\NewStore.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\addnewbutton.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\menu\PlusMenu.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Stores.axml" />
@@ -114,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\drawable\PlusSign.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

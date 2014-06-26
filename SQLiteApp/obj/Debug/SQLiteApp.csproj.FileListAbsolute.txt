@@ -17,3 +17,7 @@ C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\o
 C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\layout\ordersummaryitem.xml
 C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\bin\Debug\Newtonsoft.Json.dll
 C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\layout\stores.xml
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\layout\newstore.xml
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\drawable\addnewbutton.xml
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\menu\plusmenu.xml
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\drawable\plussign.png

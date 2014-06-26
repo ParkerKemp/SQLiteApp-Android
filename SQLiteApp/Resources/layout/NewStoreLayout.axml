@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DDDDDD"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:text="Store Name:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#FF0000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:text="Store ID:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#FF0000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:id="@+id/editText1"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:text="Territory #:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#FF0000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/editText2"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:text="Sequence #:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#FF0000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/editText3"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:text="Address line 1:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#FF0000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/editText4"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:text="Address line 2:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#FF0000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/editText5"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:text="City:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#FF0000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/editText6"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:text="State:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#FF0000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/editText7"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:text="Store #:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#FF0000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/editText8"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:text="Manager Name:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#FF0000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/editText9"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:text="Phone #:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#FF0000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/editText10"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
