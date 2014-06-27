@@ -16,20 +16,16 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp">
         <EditText
+            style="@style/inputbox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minWidth="30px"
-            android:minHeight="30px"
             android:layout_column="0"
             android:id="@+id/storeIdEditText"
-            android:background="#FFFFFF"
             android:paddingLeft="1dip"
             android:paddingRight="1dip"
             android:layout_marginLeft="2dip"
             android:layout_marginRight="2dip"
             android:layout_marginTop="2dip"
             android:imeOptions="actionSearch|flagNoExtractUi"
-            android:textColor="#003300"
             android:hint="Search for stores" />
     </LinearLayout>
     <LinearLayout

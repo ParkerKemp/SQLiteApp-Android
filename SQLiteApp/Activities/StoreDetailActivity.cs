@@ -3,6 +3,7 @@ using Android.Content;
 using Android.OS;
 using Android.Widget;
 using Newtonsoft.Json;
+using System;
 
 namespace SQLiteApp
 {
@@ -48,7 +49,15 @@ namespace SQLiteApp
 
 		private void GetExtras()
 		{
-			_store = JsonConvert.DeserializeObject<Store>(Intent.GetStringExtra("Store"));
+			try
+			{
+				_store = JsonConvert.DeserializeObject<Store>(Intent.GetStringExtra("Store"));
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e.Message);
+				throw;
+			}
 		}
 
 		private void GetUIComponents()

@@ -9,7 +9,6 @@ using System.IO;
 
 namespace SQLiteApp
 {
-	//[Activity(Label = "All Stores", MainLauncher = true, ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
 	public class StoresActivity : Activity
 	{
 		protected ListView _storeList;
@@ -21,7 +20,6 @@ namespace SQLiteApp
 			base.OnCreate(bundle);
 
 			SetContentView(Resource.Layout.Stores);
-
 			ActionBar.SetDisplayShowHomeEnabled(false);
 		}
 
@@ -47,9 +45,7 @@ namespace SQLiteApp
 			{
 				var adapter = (StoreNameAdapter)_storeList.Adapter;
 				var store = adapter[e.Position];
-				var json = JsonConvert.SerializeObject(store);
-				Console.WriteLine(json);
-
+				
 				ViewStoreDetails(store);
 			};
 		}

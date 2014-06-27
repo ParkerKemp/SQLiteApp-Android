@@ -35,6 +35,17 @@ namespace SQLiteApp.Activities
 			return base.OnCreateOptionsMenu(menu);
 		}
 
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			switch (item.ItemId)
+			{
+				case Resource.Id.addNew:
+					AddNewStore();
+					break;
+			}
+			return base.OnOptionsItemSelected(item);
+		}
+
 		protected override void GetUIComponents()
 		{
 			base.GetUIComponents();
@@ -46,6 +57,12 @@ namespace SQLiteApp.Activities
 			{
 				SearchStores(_storeIdEditText.Text);
 			};
+		}
+
+		private void AddNewStore()
+		{
+			Intent addStoreIntent = new Intent(this, typeof(NewStoreActivity));
+			StartActivity(addStoreIntent);
 		}
 
 		private void SearchStores(string searchTerm)

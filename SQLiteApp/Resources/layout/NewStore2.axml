@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#FF6600"
+            android:background="#FF0000"
             android:textSize="20sp" />
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +34,8 @@
                 android:textSize="16sp"
                 android:layout_width="0dp"
                 android:layout_weight="2"
-                android:layout_height="20dp" />
+                android:layout_height="20dp"
+                android:imeOptions="flagNoExtractUi" />
             <EditText
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -42,7 +44,8 @@
                 android:background="#ffffff"
                 android:hint="Store ID"
                 android:textSize="16sp"
-                android:layout_marginLeft="5dp" />
+                android:layout_marginLeft="5dp"
+                android:imeOptions="flagNoExtractUi" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/linearLayout2"
@@ -56,7 +59,8 @@
                 android:id="@+id/storeNum"
                 android:background="#ffffff"
                 android:hint="Store #"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:imeOptions="flagNoExtractUi" />
             <EditText
                 android:layout_width="0dp"
                 android:layout_weight="5"
@@ -65,7 +69,8 @@
                 android:layout_marginLeft="5dp"
                 android:background="#ffffff"
                 android:hint="Territory #"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:imeOptions="flagNoExtractUi" />
             <EditText
                 android:layout_width="0dp"
                 android:layout_weight="4"
@@ -74,7 +79,8 @@
                 android:background="#ffffff"
                 android:layout_marginLeft="5dp"
                 android:textSize="14sp"
-                android:hint="Sequence #" />
+                android:hint="Sequence #"
+                android:imeOptions="flagNoExtractUi" />
         </LinearLayout>
         <TextView
             android:text="Contact:"
@@ -91,7 +97,8 @@
             android:background="#ffffff"
             android:hint="Manager Full Name"
             android:layout_marginTop="5dp"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:imeOptions="flagNoExtractUi" />
         <EditText
             android:id="@+id/address1"
             android:layout_width="match_parent"
@@ -99,7 +106,8 @@
             android:background="#ffffff"
             android:layout_marginTop="10dp"
             android:hint="Address (line 1)"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:imeOptions="flagNoExtractUi" />
         <EditText
             android:id="@+id/address2"
             android:layout_width="match_parent"
@@ -107,7 +115,8 @@
             android:background="#ffffff"
             android:layout_marginTop="5dp"
             android:hint="Address (line 2)"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:imeOptions="flagNoExtractUi" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -120,7 +129,8 @@
                 android:id="@+id/city"
                 android:background="#ffffff"
                 android:hint="City"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:imeOptions="flagNoExtractUi" />
             <EditText
                 android:layout_width="0dp"
                 android:layout_weight="2"
@@ -129,7 +139,8 @@
                 android:background="#ffffff"
                 android:layout_marginLeft="5dp"
                 android:hint="St"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:imeOptions="flagNoExtractUi" />
             <EditText
                 android:layout_width="0dp"
                 android:layout_weight="6"
@@ -138,7 +149,8 @@
                 android:background="#ffffff"
                 android:hint="Zip"
                 android:layout_marginLeft="5dp"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:imeOptions="flagNoExtractUi" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

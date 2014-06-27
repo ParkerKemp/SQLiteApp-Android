@@ -66,107 +66,110 @@ namespace SQLiteApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060021
-			public const int addNew = 2131099681;
+			// aapt resource value: 0x7f070022
+			public const int addNew = 2131165218;
 			
-			// aapt resource value: 0x7f060017
-			public const int address = 2131099671;
+			// aapt resource value: 0x7f070013
+			public const int addStore = 2131165203;
 			
-			// aapt resource value: 0x7f060011
-			public const int contactName = 2131099665;
+			// aapt resource value: 0x7f07001b
+			public const int address = 2131165211;
 			
-			// aapt resource value: 0x7f060013
-			public const int cost = 2131099667;
+			// aapt resource value: 0x7f07000d
+			public const int address1 = 2131165197;
 			
-			// aapt resource value: 0x7f06000e
-			public const int date = 2131099662;
+			// aapt resource value: 0x7f07000e
+			public const int address2 = 2131165198;
 			
-			// aapt resource value: 0x7f060007
-			public const int editText1 = 2131099655;
+			// aapt resource value: 0x7f07000f
+			public const int city = 2131165199;
 			
-			// aapt resource value: 0x7f060006
-			public const int editText2 = 2131099654;
+			// aapt resource value: 0x7f070018
+			public const int contactName = 2131165208;
 			
-			// aapt resource value: 0x7f06000a
-			public const int editText3 = 2131099658;
+			// aapt resource value: 0x7f07001a
+			public const int cost = 2131165210;
 			
-			// aapt resource value: 0x7f060009
-			public const int editText4 = 2131099657;
+			// aapt resource value: 0x7f070015
+			public const int date = 2131165205;
 			
-			// aapt resource value: 0x7f06000b
-			public const int editText5 = 2131099659;
+			// aapt resource value: 0x7f07001f
+			public const int linearLayout = 2131165215;
 			
-			// aapt resource value: 0x7f06001e
-			public const int linearLayout = 2131099678;
+			// aapt resource value: 0x7f070000
+			public const int linearLayout1 = 2131165184;
 			
-			// aapt resource value: 0x7f060000
-			public const int linearLayout1 = 2131099648;
+			// aapt resource value: 0x7f070001
+			public const int linearLayout2 = 2131165185;
 			
-			// aapt resource value: 0x7f060001
-			public const int linearLayout2 = 2131099649;
+			// aapt resource value: 0x7f070008
+			public const int linearLayout3 = 2131165192;
 			
-			// aapt resource value: 0x7f060019
-			public const int managerName = 2131099673;
+			// aapt resource value: 0x7f07000c
+			public const int managerName = 2131165196;
 			
-			// aapt resource value: 0x7f06000d
-			public const int orderID = 2131099661;
+			// aapt resource value: 0x7f070014
+			public const int orderID = 2131165204;
 			
-			// aapt resource value: 0x7f060004
-			public const int orderList = 2131099652;
+			// aapt resource value: 0x7f070004
+			public const int orderList = 2131165188;
 			
-			// aapt resource value: 0x7f06001a
-			public const int phoneNum = 2131099674;
+			// aapt resource value: 0x7f070012
+			public const int phoneNum = 2131165202;
 			
-			// aapt resource value: 0x7f060005
-			public const int relativeLayout1 = 2131099653;
+			// aapt resource value: 0x7f07001e
+			public const int relativeLayout1 = 2131165214;
 			
-			// aapt resource value: 0x7f060008
-			public const int relativeLayout2 = 2131099656;
+			// aapt resource value: 0x7f070019
+			public const int rushOrder = 2131165209;
 			
-			// aapt resource value: 0x7f060012
-			public const int rushOrder = 2131099666;
+			// aapt resource value: 0x7f07000b
+			public const int sequenceNum = 2131165195;
 			
-			// aapt resource value: 0x7f060016
-			public const int sequenceNum = 2131099670;
+			// aapt resource value: 0x7f070010
+			public const int state = 2131165200;
 			
-			// aapt resource value: 0x7f060014
-			public const int storeID = 2131099668;
+			// aapt resource value: 0x7f070007
+			public const int storeID = 2131165191;
 			
-			// aapt resource value: 0x7f06001f
-			public const int storeIdEditText = 2131099679;
+			// aapt resource value: 0x7f070020
+			public const int storeIdEditText = 2131165216;
 			
-			// aapt resource value: 0x7f060020
-			public const int storeList = 2131099680;
+			// aapt resource value: 0x7f070021
+			public const int storeList = 2131165217;
 			
-			// aapt resource value: 0x7f06001d
-			public const int storeName = 2131099677;
+			// aapt resource value: 0x7f070006
+			public const int storeName = 2131165190;
 			
-			// aapt resource value: 0x7f060018
-			public const int storeNum = 2131099672;
+			// aapt resource value: 0x7f070009
+			public const int storeNum = 2131165193;
 			
-			// aapt resource value: 0x7f060015
-			public const int territoryNum = 2131099669;
+			// aapt resource value: 0x7f07000a
+			public const int territoryNum = 2131165194;
 			
-			// aapt resource value: 0x7f06000c
-			public const int textView1 = 2131099660;
+			// aapt resource value: 0x7f070005
+			public const int textView1 = 2131165189;
 			
-			// aapt resource value: 0x7f060002
-			public const int textView2 = 2131099650;
+			// aapt resource value: 0x7f070002
+			public const int textView2 = 2131165186;
 			
-			// aapt resource value: 0x7f060003
-			public const int textView3 = 2131099651;
+			// aapt resource value: 0x7f070003
+			public const int textView3 = 2131165187;
 			
-			// aapt resource value: 0x7f060010
-			public const int totalCost = 2131099664;
+			// aapt resource value: 0x7f070017
+			public const int totalCost = 2131165207;
 			
-			// aapt resource value: 0x7f06001c
-			public const int totalExpenses = 2131099676;
+			// aapt resource value: 0x7f07001d
+			public const int totalExpenses = 2131165213;
 			
-			// aapt resource value: 0x7f06000f
-			public const int totalItems = 2131099663;
+			// aapt resource value: 0x7f070016
+			public const int totalItems = 2131165206;
 			
-			// aapt resource value: 0x7f06001b
-			public const int totalOrdersButton = 2131099675;
+			// aapt resource value: 0x7f07001c
+			public const int totalOrdersButton = 2131165212;
+			
+			// aapt resource value: 0x7f070011
+			public const int zip = 2131165201;
 			
 			static Id()
 			{
@@ -215,8 +218,8 @@ namespace SQLiteApp
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int PlusMenu = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int PlusMenu = 2131099648;
 			
 			static Menu()
 			{
@@ -243,6 +246,22 @@ namespace SQLiteApp
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int inputbox = 2131034112;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}
