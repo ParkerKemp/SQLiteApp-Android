@@ -72,17 +72,23 @@
     <Compile Include="..\..\..\..\..\Desktop\SQLiteApp Backend\Store.cs">
       <Link>Backend code\Store.cs</Link>
     </Compile>
-    <Compile Include="Activities\AllOrdersActivity.cs" />
-    <Compile Include="Activities\AllStoresActivity.cs" />
-    <Compile Include="Activities\NewStoreActivity.cs" />
-    <Compile Include="Activities\StoresActivity.cs" />
-    <Compile Include="Activities\OrderDetailActivity.cs" />
-    <Compile Include="Activities\SearchStoresActivity.cs" />
+    <Compile Include="Activities\Orders\AllOrdersActivity.cs" />
+    <Compile Include="Activities\Orders\EditOrderActivity.cs" />
+    <Compile Include="Activities\Orders\OrderEntryActivity.cs" />
+    <Compile Include="Activities\SQLiteAppActivity.cs" />
+    <Compile Include="Activities\Stores\AllStoresActivity.cs" />
+    <Compile Include="Activities\Orders\NewOrderActivity.cs" />
+    <Compile Include="Activities\Stores\EditStoreActivity.cs" />
+    <Compile Include="Activities\Stores\StoreEntryActivity.cs" />
+    <Compile Include="Activities\Stores\NewStoreActivity.cs" />
+    <Compile Include="Activities\Stores\StoresActivity.cs" />
+    <Compile Include="Activities\Orders\OrderDetailActivity.cs" />
+    <Compile Include="Activities\Stores\SearchStoresActivity.cs" />
     <Compile Include="Adapters\OrderSummaryAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Adapters\StoreAdapter.cs" />
-    <Compile Include="Activities\StoreDetailActivity.cs" />
+    <Compile Include="Activities\Stores\StoreDetailActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\Stores.sqlite" />
@@ -110,6 +116,18 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\NewStore.axml" />
+    <AndroidResource Include="Resources\layout\NewOrder.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\menu\EditDeleteMenu.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\DeleteButton.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\EditButton.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Stores.axml" />
@@ -124,6 +142,11 @@
     <Content Include="Properties\AndroidManifest.xml" />
     <AndroidResource Include="Resources\drawable\PlusSign.png" />
     <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable\CheckboxUnchecked.png" />
+    <AndroidResource Include="Resources\drawable\CheckboxChecked.png" />
+    <AndroidResource Include="Resources\drawable\checkbox.axml" />
+    <AndroidResource Include="Resources\drawable\Delete.png" />
+    <AndroidResource Include="Resources\drawable\Edit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

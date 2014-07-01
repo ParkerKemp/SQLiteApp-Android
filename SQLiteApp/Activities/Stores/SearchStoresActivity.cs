@@ -31,12 +31,12 @@ namespace SQLiteApp.Activities
 			
 			_database = new Database(DatabaseName());
 
-			PopulateView();
-
 			ActionBar.Title = "Searching stores for \"" + _searchTerm + "\"...";
 
 			ActionBar.SetHomeButtonEnabled(true);
 			ActionBar.SetDisplayHomeAsUpEnabled(true);
+
+			PopulateView();
 		}
 
 		public override bool OnOptionsItemSelected(Android.Views.IMenuItem item)

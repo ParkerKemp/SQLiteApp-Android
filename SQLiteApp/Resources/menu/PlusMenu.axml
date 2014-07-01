@@ -3,5 +3,5 @@
 	<item android:id="@+id/addNew"
 		  android:icon="@drawable/addnewbutton"
 		  android:showAsAction="always"
-		  android:title="Add New Item"/>
+		  android:title="Add new item"/>
 </menu>

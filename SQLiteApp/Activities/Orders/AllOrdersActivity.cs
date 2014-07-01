@@ -1,21 +1,24 @@
 using Android.App;
 using Android.Content;
 using Android.OS;
+using Android.Views;
 using Android.Widget;
 using Mono.Data.Sqlite;
 using Newtonsoft.Json;
+using SQLiteApp.Activities;
+using System;
 using System.Collections.Generic;
 
 namespace SQLiteApp
 {
 	[Activity(ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
-	class AllOrdersActivity : Activity
+	class AllOrdersActivity : SQLiteAppActivity
 	{
-		Database _database;
-		ListView _orderList;
-		string _storeName;
-		string _storeID;
-
+		private Database _database;
+		private ListView _orderList;
+		private string _storeName;
+		private string _storeID;
+		
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
@@ -28,12 +31,12 @@ namespace SQLiteApp
 
 			GetDatabase();
 
-			PopulateView();
-
 			ActionBar.Title = "Orders from " + _storeName;
 			ActionBar.SetHomeButtonEnabled(true);
 			ActionBar.SetDisplayHomeAsUpEnabled(true);
 			ActionBar.SetDisplayShowHomeEnabled(false);
+
+			PopulateView();
 		}
 
 		public override bool OnOptionsItemSelected(Android.Views.IMenuItem item)
@@ -43,6 +46,9 @@ namespace SQLiteApp
 				case Android.Resource.Id.Home:
 					OnBackPressed();
 					break;
+				case Resource.Id.addNew:
+					AddNewOrder();
+					break;
 			}
 			return base.OnOptionsItemSelected(item);
 		}
@@ -50,6 +56,20 @@ namespace SQLiteApp
 		public override void OnConfigurationChanged(Android.Content.Res.Configuration newConfig)
 		{
 			base.OnConfigurationChanged(newConfig);
+		}
+
+		private void AddNewOrder()
+		{
+			Intent addStoreIntent = new Intent(this, typeof(NewOrderActivity));
+			addStoreIntent.PutExtra("StoreID", _storeID);
+			addStoreIntent.PutExtra("StoreName", _storeName);
+			StartActivityForResult(addStoreIntent, 2);
+		}
+
+		public override bool OnCreateOptionsMenu(IMenu menu)
+		{
+			MenuInflater.Inflate(Resource.Menu.PlusMenu, menu);
+			return base.OnCreateOptionsMenu(menu);
 		}
 
 		private void GetExtras()
@@ -84,10 +104,10 @@ namespace SQLiteApp
 			Intent orderIntent = new Intent(this, typeof(OrderDetailActivity));
 			orderIntent.PutExtra("Order", JsonConvert.SerializeObject(order));
 			orderIntent.PutExtra("StoreName", _storeName);
-			StartActivity(orderIntent);
+			StartActivityForResult(orderIntent, 1);
 		}
 
-		private void PopulateView()
+		protected override void PopulateView()
 		{
 			Order[] orders = _database.GetOrdersForStore(_storeID);
 

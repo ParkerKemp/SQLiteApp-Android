@@ -4,17 +4,18 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using Newtonsoft.Json;
+using SQLiteApp.Activities;
 using System;
 using System.IO;
 
 namespace SQLiteApp
 {
-	public class StoresActivity : Activity
+	public class StoresActivity : SQLiteAppActivity
 	{
 		protected ListView _storeList;
 		protected EditText _storeIdEditText;
 		protected Database _database;
-
+		
 		protected override void OnCreate(Bundle bundle)
 		{
 			base.OnCreate(bundle);
@@ -61,7 +62,7 @@ namespace SQLiteApp
 		{
 			Intent storeDetailIntent = new Intent(this, typeof(StoreDetailActivity));
 			storeDetailIntent.PutExtra("Store", JsonConvert.SerializeObject(store));
-			StartActivity(storeDetailIntent);
+			StartActivityForResult(storeDetailIntent, 1);
 		}
 
 		protected void CopyDatabaseFromAsset(string filename)
@@ -83,14 +84,6 @@ namespace SQLiteApp
 				Console.WriteLine(e.Message);
 				throw;
 			}
-		}
-
-		protected virtual void PopulateView()
-		{
-			Store[] allStores = _database.GetAllStores();
-
-			StoreNameAdapter adapter = new StoreNameAdapter(this, allStores);
-			_storeList.Adapter = adapter;
 		}
 	}
 }

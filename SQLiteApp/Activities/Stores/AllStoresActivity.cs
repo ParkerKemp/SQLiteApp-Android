@@ -29,6 +29,13 @@ namespace SQLiteApp.Activities
 			PopulateView();
 		}
 
+		protected override void OnResume()
+		{
+			base.OnResume();
+
+			_storeIdEditText.Text = "";
+		}
+
 		public override bool OnCreateOptionsMenu(IMenu menu)
 		{
 			MenuInflater.Inflate(Resource.Menu.PlusMenu, menu);
@@ -62,14 +69,35 @@ namespace SQLiteApp.Activities
 		private void AddNewStore()
 		{
 			Intent addStoreIntent = new Intent(this, typeof(NewStoreActivity));
-			StartActivity(addStoreIntent);
+			StartActivityForResult(addStoreIntent, 1);
+		}
+
+		protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+		{
+			base.OnActivityResult(requestCode, resultCode, data);
+			if (requestCode == 1)
+			{
+				if (resultCode == Result.Ok)
+				{
+					Store store = JsonConvert.DeserializeObject<Store>(data.GetStringExtra("Store"));
+					ViewStoreDetails(store);
+				}
+			}
 		}
 
 		private void SearchStores(string searchTerm)
 		{
 			Intent storeSearchIntent = new Intent(this, typeof(SearchStoresActivity));
 			storeSearchIntent.PutExtra("SearchTerm", searchTerm);
-			StartActivity(storeSearchIntent);
+			StartActivityForResult(storeSearchIntent, 2);
+		}
+
+		protected override void PopulateView()
+		{
+			Store[] allStores = _database.GetAllStores();
+
+			StoreNameAdapter adapter = new StoreNameAdapter(this, allStores);
+			_storeList.Adapter = adapter;
 		}
 	}
 }

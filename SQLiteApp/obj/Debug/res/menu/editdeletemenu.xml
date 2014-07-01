@@ -1,0 +1,1 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"><item android:id="@+id/edit" android:icon="@drawable/editbutton" android:showAsAction="always" android:title="Edit this item" /><item android:id="@+id/delete" android:icon="@drawable/deletebutton" android:showAsAction="always" android:title="Delete this item" /></menu>

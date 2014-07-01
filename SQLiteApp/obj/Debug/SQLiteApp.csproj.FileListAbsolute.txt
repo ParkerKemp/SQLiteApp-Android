@@ -22,3 +22,12 @@ C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\o
 C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\menu\plusmenu.xml
 C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\drawable\plussign.png
 C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\values\styles.xml
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\layout\neworder.xml
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\drawable\checkboxunchecked.png
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\drawable\checkboxchecked.png
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\drawable\checkbox.xml
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\drawable\deletebutton.xml
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\drawable\delete.png
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\menu\editdeletemenu.xml
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\drawable\editbutton.xml
+C:\Users\parker.kemp\Documents\Visual Studio 2013\Projects\SQLiteApp\SQLiteApp\obj\Debug\res\drawable\edit.png

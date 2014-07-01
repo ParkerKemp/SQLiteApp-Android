@@ -2,7 +2,7 @@ package sqliteapp;
 
 
 public class StoresActivity
-	extends android.app.Activity
+	extends sqliteapp.activities.SQLiteAppActivity
 	implements
 		mono.android.IGCUserPeer
 {

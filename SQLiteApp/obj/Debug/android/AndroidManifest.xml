@@ -3,12 +3,17 @@
   <uses-sdk android:minSdkVersion="14" />
   <application android:name="mono.android.app.Application" android:debuggable="true">
     <activity android:configChanges="orientation|screenSize" android:name="sqliteapp.AllOrdersActivity" />
+    <activity android:configChanges="orientation|screenSize" android:name="sqliteapp.activities.OrderEntryActivity" />
+    <activity android:configChanges="orientation|screenSize" android:name="sqliteapp.activities.EditOrderActivity" />
     <activity android:configChanges="orientation|screenSize" android:label="All Stores" android:name="sqliteapp.activities.AllStoresActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:configChanges="orientation|screenSize" android:name="sqliteapp.activities.NewOrderActivity" />
+    <activity android:configChanges="orientation|screenSize" android:name="sqliteapp.activities.StoreEntryActivity" />
+    <activity android:configChanges="orientation|screenSize" android:name="sqliteapp.activities.EditStoreActivity" />
     <activity android:configChanges="orientation|screenSize" android:name="sqliteapp.activities.NewStoreActivity" />
     <activity android:configChanges="orientation|screenSize" android:name="sqliteapp.OrderDetailActivity" />
     <activity android:configChanges="orientation|screenSize" android:name="sqliteapp.activities.SearchStoresActivity" />
