@@ -140,13 +140,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
-    <AndroidResource Include="Resources\drawable\PlusSign.png" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\drawable\CheckboxUnchecked.png" />
     <AndroidResource Include="Resources\drawable\CheckboxChecked.png" />
     <AndroidResource Include="Resources\drawable\checkbox.axml" />
     <AndroidResource Include="Resources\drawable\Delete.png" />
     <AndroidResource Include="Resources\drawable\Edit.png" />
+    <AndroidResource Include="Resources\drawable\PlusSign.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
